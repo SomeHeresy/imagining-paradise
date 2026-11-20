@@ -1,0 +1,364 @@
+<!doctype html>
+<!-- EDITING GUIDE
+  1. Find a gallery by searching for GALLERY START and its title.
+  2. EDIT WORDING marks visible labels and curator notes.
+  3. EDIT IMAGE marks an img. Copy your picture into assets/images, update src and alt,
+     then update EDIT CREDIT. The opening photograph is a separate detail crop.
+  4. To reorder a stop, move its whole GALLERY START through GALLERY END block.
+     Keep figure and section ids stable so comparisons, bookmarks, and detail views follow.
+  5. OPTIONAL DETAIL marks removable enhancements. To edit spacing or colors open styles.css.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4ed">
+  <meta name="description" content="An image-led exhibition of the worlds people have imagined, from ancient Dilmun to Panga.">
+  <title>Imagining Paradise: From Heaven to Utopia and Beyond</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <noscript><style>.timeline .route { display: none; }</style></noscript>
+</head>
+<body id="entrance">
+  <a class="skip-link" href="#tour">Skip to the collection</a>
+  <header class="mast">
+    <a href="#entrance" class="wordmark">Imagining Paradise</a>
+    <a href="#tour">Exhibition timeline</a>
+  </header>
+  <div class="hero">
+    <div class="intro">
+      <p class="place">WRITING 45 &nbsp; / &nbsp; VIRTUAL EXHIBITION</p>
+      <!-- EDIT WORDING: The opening title, question, and button. -->
+      <h1>Imagining <em>Paradise</em></h1>
+      <p class="subtitle">From Heaven to Utopia and Beyond</p>
+      <p class="hero-question">What would your perfect world look like?</p>
+      <a class="enter" href="#before-writing">Enter the exhibition</a>
+    </div>
+    <figure class="hero-art">
+      <!-- EDIT IMAGE: This opening detail has its own file so you may change it independently. -->
+      <img src="assets/images/paradise-entrance.jpg" alt="Angels and the blessed meet in a garden of flowering plants." fetchpriority="high">
+      <!-- EDIT CREDIT: The full object appears in the garden-and-island gallery. -->
+      <figcaption><a href="#paradise-art">Giovanni di Paolo · Paradise, detail · 1445</a></figcaption>
+    </figure>
+  </div>
+  <nav class="timeline" id="tour" aria-label="Exhibition timeline">
+    <h2>Exhibition timeline</h2>
+    <div class="route">
+      <svg aria-hidden="true" focusable="false"><path></path></svg>
+      <ol></ol>
+    </div>
+    <noscript><a href="#before-writing">Begin the tour</a></noscript>
+  </nav>
+  <main>
+  <!-- GALLERY START: Before writing
+       Move this section and its closing comment together. Keep its id for bookmarks. -->
+  <section class="gallery" id="before-writing" data-stop="Sulawesi cave art" data-era="≥51,200 years ago" aria-labelledby="before-writing-title">
+    <!-- EDIT WORDING: Place, era, and title. Edit data-stop and data-era above for the short timeline label. -->
+    <p class="place">Sulawesi, Indonesia · At least 51,200 years ago</p>
+    <h2 id="before-writing-title">Before writing</h2>
+    <figure id="cave-art">
+      <!-- EDIT IMAGE: Replace src and describe the new image in alt. Check its credit below. -->
+      <img loading="lazy" decoding="async" src="assets/images/sulawesi-panel.jpg" alt="In a color-enhanced photograph, red pigment on a limestone surface forms a pig and smaller human-like figures.">
+      <!-- EDIT WORDING: Title, place, and dates appear beside the artwork. -->
+      <figcaption>Leang Karampuang · South Sulawesi · Color-enhanced research photograph</figcaption>
+      <div class="work-note">
+        <!-- EDIT WORDING: This note appears directly below the artwork. -->
+        <p>A layer of mineral deposited over the pigment gave researchers a minimum age for the painting. They interpret the arrangement as a scene. The distance between recognizing a figure and knowing what its maker hoped for is where this exhibition begins.</p>
+        <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
+        <p>Adapted from figure 3 in Oktaviana et al. (2024), cropped for display. <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. <a href="https://www.nature.com/articles/s41586-024-07541-7">Read the dating study and examine its figures</a>.</p>
+      </div>
+    </figure>
+    <!-- OPTIONAL DETAIL: A second view follows the same area of the panel. -->
+    <details class="tracing"><summary>Compare the research tracing</summary>
+      <figure>
+        <!-- EDIT IMAGE: Keep the tracing and panel at the same scale. -->
+        <img loading="lazy" src="assets/images/sulawesi-tracing.jpg" alt="Research drawing outlines the pig and smaller human-like figures visible on the panel.">
+        <figcaption>Leang Karampuang · Published research tracing, 2024</figcaption>
+      </figure>
+    </details>
+    <p class="question">We can recognize a story. What its makers imagined as paradise remains unknown.</p>
+  </section>
+  <!-- GALLERY END: Before writing -->
+
+  <!-- GALLERY START: When the wolf lets the lamb graze
+       Move this section and its closing comment together. Keep its id for bookmarks. -->
+  <section class="gallery" id="dilmun" data-stop="Dilmun" data-era="1900–1600 BCE" aria-labelledby="dilmun-title">
+    <!-- EDIT WORDING: Place, era, and title. Edit data-stop and data-era above for the short timeline label. -->
+    <p class="place">Nippur, Mesopotamia · Tablet dated 1900–1600 BCE</p>
+    <h2 id="dilmun-title">When the wolf lets the lamb graze</h2>
+    <figure id="dilmun-art">
+      <!-- EDIT IMAGE: Replace src and describe the new image in alt. Check its credit below. -->
+      <img loading="lazy" decoding="async" src="assets/images/dilmun.jpg" alt="A wolf sits under a palm as sheep graze along the marsh.">
+      <!-- EDIT WORDING: Title, place, and dates appear beside the artwork. -->
+      <figcaption>Dilmun · Modern illustration after a Sumerian poem</figcaption>
+      <div class="work-note">
+        <!-- EDIT WORDING: This note appears directly below the artwork. -->
+        <p>In the opening of Enki and Ninhursanga, a wolf leaves the lambs alone. Yet Dilmun still needs fresh water. When the waters rise, its fields yield grain. One surviving witness to this imagined place is a baked clay tablet from Nippur.</p>
+        <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
+        <p>Original AI-generated illustration (OpenAI), made for this exhibition, 2026. Literary source: <a href="https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.1.1.1">Oxford’s translation of Enki and Ninhursanga</a>. <a href="https://collections.penn.museum/collections/object/347491">See the inscribed tablet, Penn Museum CBS4561</a>.</p>
+      </div>
+    </figure>
+  </section>
+  <!-- GALLERY END: When the wolf lets the lamb graze -->
+
+  <!-- GALLERY START: The good life
+       Move this section and its closing comment together. Keep its id for bookmarks. -->
+  <section class="gallery" id="the-good-life" data-stop="Egypt, Greece &amp; India" data-era="2nd–1st millennium BCE" aria-labelledby="the-good-life-title">
+    <!-- EDIT WORDING: Place, era, and title. Edit data-stop and data-era above for the short timeline label. -->
+    <p class="place">Egypt · Greece · India</p>
+    <h2 id="the-good-life-title">The good life</h2>
+    <p class="question">Would your perfect world still have work in it?</p>
+    <div class="pair">
+    <figure id="egypt-art">
+      <!-- EDIT IMAGE: Replace src and describe the new image in alt. Check its credit below. -->
+      <img loading="lazy" decoding="async" src="assets/images/egyptian-harvest.jpg" alt="Sennedjem and Iineferti sow, pull flax, and harvest grain in ordered bands of fields.">
+      <!-- EDIT WORDING: Title, place, and dates appear beside the artwork. -->
+      <figcaption>Fields of Iaru · Egypt, ca. 1300–1224 BCE · Facsimile, 1922</figcaption>
+      <div class="work-note">
+        <!-- EDIT WORDING: This note appears directly below the artwork. -->
+        <p>Sennedjem and Iineferti still have things to do in the next world. Grain stands high, and they work together. Look at the hands before turning to Hesiod’s imagined past, where food comes freely.</p>
+        <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
+        <p>Charles K. Wilkinson after the painted tomb wall at Deir el-Medina. <a href="https://www.metmuseum.org/art/collection/search/548354">The Metropolitan Museum of Art</a>, object 30.4.2. Public domain, The Met Open Access (CC0).</p>
+      </div>
+    </figure>
+    <figure id="hesiod-art">
+      <!-- EDIT IMAGE: Replace src and describe the new image in alt. Check its credit below. -->
+      <img loading="lazy" decoding="async" src="assets/images/golden-age.jpg" alt="Three people rest beneath grapes with a basket of fruit and ripe grain within reach.">
+      <!-- EDIT WORDING: Title, place, and dates appear beside the artwork. -->
+      <figcaption>The golden generation · Greece, ca. 700 BCE · Modern illustration</figcaption>
+      <div class="work-note">
+        <!-- EDIT WORDING: This note appears directly below the artwork. -->
+        <p>In Works and Days, Hesiod looks backward to the time of Cronos. The earth produces food abundantly, relieving the golden generation of exhausting labor. What did you notice first about the people’s hands?</p>
+        <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
+        <p>Original AI-generated illustration (OpenAI), made for this exhibition, 2026. Literary source: <a href="https://lrc.la.utexas.edu/eieol/grkol/70">Hesiod, Works and Days, beginning at line 109</a>.</p>
+      </div>
+    </figure>
+    </div>
+    <aside class="alcove"><h3>Beyond another lifetime</h3>
+    <figure id="jain-art">
+      <!-- EDIT IMAGE: Replace src and describe the new image in alt. Check its credit below. -->
+      <img loading="lazy" decoding="async" src="assets/images/mahavira.jpg" alt="Mahavira sits above a pale crescent in a manuscript painting from Gujarat.">
+      <!-- EDIT WORDING: Title, place, and dates appear beside the artwork. -->
+      <figcaption>Mahavira as a liberated soul · Gujarat, 15th century</figcaption>
+      <div class="work-note">
+        <!-- EDIT WORDING: This note appears directly below the artwork. -->
+        <p>An early Indian Upanishad connects desire and action to repeated earthly life. Centuries later, this Jain manuscript gives a distinct tradition its own visual form: Mahavira sits as a liberated soul at the summit of the cosmos. The crescent marks the dwelling of liberated beings.</p>
+        <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
+        <p>Folio from a Kalpasutra manuscript. <a href="https://www.metmuseum.org/art/collection/search/74994">The Metropolitan Museum of Art</a>. Public domain, The Met Open Access (CC0). Early text for comparison: <a href="https://heritage.iitk.ac.in/BRU/4.4.6?script=IAST">Bṛhadāraṇyaka Upaniṣad 4.4.6</a>.</p>
+      </div>
+    </figure>
+    </aside>
+  </section>
+  <!-- GALLERY END: The good life -->
+
+  <!-- GALLERY START: A promise of paradise
+       Move this section and its closing comment together. Keep its id for bookmarks. -->
+  <section class="gallery" id="a-promise" data-stop="Early Christian paradise" data-era="1st century CE" aria-labelledby="a-promise-title">
+    <!-- EDIT WORDING: Place, era, and title. Edit data-stop and data-era above for the short timeline label. -->
+    <p class="place">Eastern Mediterranean · First century CE</p>
+    <h2 id="a-promise-title">A promise of paradise</h2>
+    <div class="pair">
+    <figure id="luke-art">
+      <!-- EDIT IMAGE: Replace src and describe the new image in alt. Check its credit below. -->
+      <img loading="lazy" decoding="async" src="assets/images/luke-paradise.jpg" alt="Two condemned figures turn toward one another.">
+      <!-- EDIT WORDING: Title, place, and dates appear beside the artwork. -->
+      <figcaption>A promise to one person · Luke 23 · Modern illustration</figcaption>
+      <div class="work-note">
+        <!-- EDIT WORDING: This note appears directly below the artwork. -->
+        <p>A condemned man asks Jesus to remember him. Jesus promises him companionship in paradise. Luke gives the exchange a voice and a listener, leaving the scenery open to imagination.</p>
+        <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
+        <p>Original AI-generated illustration (OpenAI), made for this exhibition, 2026. Literary source: <a href="https://bible.usccb.org/bible/luke/23">Luke 23:39–43</a>.</p>
+      </div>
+    </figure>
+    <figure id="city-art">
+      <!-- EDIT IMAGE: Replace src and describe the new image in alt. Check its credit below. -->
+      <img loading="lazy" decoding="async" src="assets/images/new-jerusalem.jpg" alt="A luminous city descends toward the earth.">
+      <!-- EDIT WORDING: Title, place, and dates appear beside the artwork. -->
+      <figcaption>A city for a people · Revelation 21 · Modern illustration</figcaption>
+      <div class="work-note">
+        <!-- EDIT WORDING: This note appears directly below the artwork. -->
+        <p>In Revelation a city descends from heaven. God dwells among people, and death and mourning end. Move your eye from the intimate exchange in Luke to the many gates of this collective dwelling.</p>
+        <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
+        <p>Original AI-generated illustration (OpenAI), made for this exhibition, 2026. Literary source: <a href="https://bible.usccb.org/bible/revelation/21">Revelation 21:1–4, 12–21</a>.</p>
+      </div>
+    </figure>
+    </div>
+  </section>
+  <!-- GALLERY END: A promise of paradise -->
+
+  <!-- GALLERY START: A village beyond the stream
+       Move this section and its closing comment together. Keep its id for bookmarks. -->
+  <section class="gallery" id="peach-blossom-spring" data-stop="Peach Blossom Spring" data-era="Early 5th century" aria-labelledby="peach-blossom-spring-title">
+    <!-- EDIT WORDING: Place, era, and title. Edit data-stop and data-era above for the short timeline label. -->
+    <p class="place">China · Early fifth-century story · Handscroll painted in 1638</p>
+    <h2 id="peach-blossom-spring-title">A village beyond the stream</h2>
+    <figure id="peach-art">
+      <!-- EDIT IMAGE: Replace src and describe the new image in alt. Check its credit below. -->
+      <img loading="lazy" decoding="async" src="assets/images/peach-blossom-spring-full.jpg" alt="A winding stream leads a fisherman through mountain scenery toward a farming community.">
+      <!-- EDIT WORDING: Title, place, and dates appear beside the artwork. -->
+      <figcaption>Peach Blossom Spring · Zhang Hong, 1638</figcaption>
+      <div class="work-note">
+        <!-- EDIT WORDING: This note appears directly below the artwork. -->
+        <p>Tao Qian’s fisherman finds people whose families escaped upheaval generations earlier. When he tries to return, the way has vanished. Zhang Hong invites you to make that journey from the right end of the handscroll toward the left.</p>
+        <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
+        <p>Zhang Hong, ink and color on paper. <a href="https://www.metmuseum.org/art/collection/search/73650">The Metropolitan Museum of Art</a>. Public domain. Detail views use the same work.</p>
+      </div>
+    </figure>
+    <!-- OPTIONAL DETAIL: Reads the full image from the figure above. -->
+    <div data-scroll="peach-art"></div>
+  </section>
+  <!-- GALLERY END: A village beyond the stream -->
+
+  <!-- GALLERY START: A garden underfoot
+       Move this section and its closing comment together. Keep its id for bookmarks. -->
+  <section class="gallery" id="garden-carpet" data-stop="Gardens of paradise" data-era="7th century" aria-labelledby="garden-carpet-title">
+    <!-- EDIT WORDING: Place, era, and title. Edit data-stop and data-era above for the short timeline label. -->
+    <p class="place">Arabia · Seventh-century text · Eighteenth-century textile</p>
+    <h2 id="garden-carpet-title">A garden underfoot</h2>
+    <figure id="carpet-art">
+      <!-- EDIT IMAGE: Replace src and describe the new image in alt. Check its credit below. -->
+      <img loading="lazy" decoding="async" src="assets/images/garden-carpet.jpg" alt="Narrow waterways divide a planted garden seen from above, edged by trees and flowers.">
+      <!-- EDIT WORDING: Title, place, and dates appear beside the artwork. -->
+      <figcaption>Fragment of a Garden Carpet · Northwestern Iran or Kurdistan, 18th century</figcaption>
+      <div class="work-note">
+        <!-- EDIT WORDING: This note appears directly below the artwork. -->
+        <p>Qur’an 47:15 describes rivers of water, milk, wine, and honey. Centuries later, this carpet’s makers gave a Persian garden the shape of a textile. Trace a canal between the trees and imagine standing inside the pattern.</p>
+        <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
+        <p><a href="https://www.metmuseum.org/art/collection/search/448423">The Metropolitan Museum of Art</a>, object from the Theodore M. Davis Collection. Public domain, The Met Open Access (CC0). <a href="https://corpus.quran.com/translation.jsp?chapter=47&verse=15">Read Qur’an 47:15</a>.</p>
+      </div>
+    </figure>
+    <div data-crop="carpet-art" data-x="50" data-y="50" data-label="Inspect the canals and planting"></div>
+  </section>
+  <!-- GALLERY END: A garden underfoot -->
+
+  <!-- GALLERY START: A garden and an island
+       Move this section and its closing comment together. Keep its id for bookmarks. -->
+  <section class="gallery" id="garden-and-island" data-stop="Paradise &amp; Utopia" data-era="1445–1516" aria-labelledby="garden-and-island-title">
+    <!-- EDIT WORDING: Place, era, and title. Edit data-stop and data-era above for the short timeline label. -->
+    <p class="place">Siena, 1445 · Louvain, 1516</p>
+    <h2 id="garden-and-island-title">A garden and an island</h2>
+    <div class="pair">
+    <figure id="paradise-art">
+      <!-- EDIT IMAGE: Replace src and describe the new image in alt. Check its credit below. -->
+      <img loading="lazy" decoding="async" src="assets/images/paradise.jpg" alt="Pairs of figures embrace among fruit trees, flowers, animals, and angels.">
+      <!-- EDIT WORDING: Title, place, and dates appear beside the artwork. -->
+      <figcaption>Paradise · Giovanni di Paolo, Siena, 1445</figcaption>
+      <div class="work-note">
+        <!-- EDIT WORDING: This note appears directly below the artwork. -->
+        <p>This small panel once sat at the base of a larger altarpiece. Faces and outstretched arms lead the eye from one reunion to another. Imagine trying to plot those meetings on the island map beside it.</p>
+        <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
+        <p>Giovanni di Paolo, tempera and gold. <a href="https://www.metmuseum.org/art/collection/search/436512">The Metropolitan Museum of Art</a>, object 06.1046. Public domain, The Met Open Access (CC0).</p>
+      </div>
+    </figure>
+    <figure id="utopia-art">
+      <!-- EDIT IMAGE: Replace src and describe the new image in alt. Check its credit below. -->
+      <img loading="lazy" decoding="async" src="assets/images/utopia-map.jpg" alt="A woodcut island with settlements and ships, surrounded by water.">
+      <!-- EDIT WORDING: Title, place, and dates appear beside the artwork. -->
+      <figcaption>The island of Utopia · Louvain, 1516</figcaption>
+      <div class="work-note">
+        <!-- EDIT WORDING: This note appears directly below the artwork. -->
+        <p>The map and invented alphabet in Thomas More’s first edition lend the island the appearance of a place one might visit. From this distance you can see how a settlement is arranged. How much can you tell about a person living there?</p>
+        <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
+        <p>Anonymous woodcut, first edition. Public-domain facsimile via <a href="https://theopenutopia.org/look/">The Open Utopia</a>. <a href="https://library.georgetown.edu/exhibition/500-years-utopia">Georgetown’s first-edition exhibition</a>.</p>
+      </div>
+    </figure>
+    </div>
+    <div data-crop="paradise-art" data-x="48" data-y="52" data-label="Inspect an embrace"></div>
+    <div data-crop="utopia-art" data-x="48" data-y="44" data-label="Inspect the island’s settlements"></div>
+    <!-- OPTIONAL DETAIL: This comparison reuses two figure ids in order. To add another,
+         copy the div, change the ids to the two figures you want, and keep their order.
+         Remove this div to remove this comparison. The original works remain in the tour. -->
+    <div data-compare="peach-art utopia-art" data-label="Compare the village and the island"></div>
+    <p class="question">Where would you look for happiness in each picture?</p>
+  </section>
+  <!-- GALLERY END: A garden and an island -->
+
+  <!-- GALLERY START: A kitchen powered by sunlight
+       Move this section and its closing comment together. Keep its id for bookmarks. -->
+  <section class="gallery" id="ladyland" data-stop="Ladyland" data-era="1905" aria-labelledby="ladyland-title">
+    <!-- EDIT WORDING: Place, era, and title. Edit data-stop and data-era above for the short timeline label. -->
+    <p class="place">South Asia · Published in Madras, 1905</p>
+    <h2 id="ladyland-title">A kitchen powered by sunlight</h2>
+    <figure id="ladyland-art">
+      <!-- EDIT IMAGE: Replace src and describe the new image in alt. Check its credit below. -->
+      <img loading="lazy" decoding="async" src="assets/images/solar-kitchen.jpg" alt="Sister Sara shows Sultana how concentrated sunlight reaches a cooking vessel through a pipe.">
+      <!-- EDIT WORDING: Title, place, and dates appear beside the artwork. -->
+      <figcaption>Ladyland’s kitchen · Modern illustration after Sultana’s Dream, 1905</figcaption>
+      <div class="work-note">
+        <!-- EDIT WORDING: This note appears directly below the artwork. -->
+        <p>Rokeya Sakhawat Hossain puts scientific knowledge into the hands of women in Ladyland. Sister Sara shows her visitor the pipe carrying concentrated solar heat into the kitchen. Follow its path from the sun to the meal, then revisit the couple harvesting in Egypt.</p>
+        <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
+        <p>Original AI-generated illustration (OpenAI), made for this exhibition, 2026. Literary source: <a href="https://scalar.lehigh.edu/literature-of-colonial-south-asia/rokeya-sakahawat-hossain-sultanas-dream-1905-full-text">Sultana’s Dream, kitchen scene</a>.</p>
+      </div>
+    </figure>
+    <!-- OPTIONAL DETAIL: This comparison reuses two figure ids in order. To add another,
+         copy the div, change the ids to the two figures you want, and keep their order.
+         Remove this div to remove this comparison. The original works remain in the tour. -->
+    <div data-compare="egypt-art ladyland-art" data-label="Compare the harvest and the solar kitchen"></div>
+  </section>
+  <!-- GALLERY END: A kitchen powered by sunlight -->
+
+  <!-- GALLERY START: The price of happiness
+       Move this section and its closing comment together. Keep its id for bookmarks. -->
+  <section class="gallery" id="omelas" data-stop="Omelas" data-era="1973" aria-labelledby="omelas-title">
+    <!-- EDIT WORDING: Place, era, and title. Edit data-stop and data-era above for the short timeline label. -->
+    <p class="place">Ursula K. Le Guin · 1973</p>
+    <h2 id="omelas-title">The price of happiness</h2>
+    <figure id="festival-art">
+      <!-- EDIT IMAGE: Replace src and describe the new image in alt. Check its credit below. -->
+      <img loading="lazy" decoding="async" src="assets/images/omelas-festival.jpg" alt="A summer festival fills an open square with people and bright banners.">
+      <!-- EDIT WORDING: Title, place, and dates appear beside the artwork. -->
+      <figcaption>Festival at Omelas · Modern illustration after Le Guin, 1973</figcaption>
+      <div class="work-note">
+        <!-- EDIT WORDING: This note appears directly below the artwork. -->
+        <p>Le Guin lets readers furnish the city with pleasures that make it convincing to them. Take a moment to decide what makes this celebration inviting, then open the next part of the story.</p>
+        <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
+        <p>Original AI-generated illustration (OpenAI), made for this exhibition, 2026. Literary source: <a href="https://www.ursulakleguin.com/the-ones-who-walk-away-from-omelas">The Ones Who Walk Away from Omelas</a>.</p>
+      </div>
+    </figure>
+    <!-- OPTIONAL DETAIL: Keep the condition closed on entry so visitors see the festival first. -->
+    <details class="reveal" id="condition">
+      <summary>What makes this happiness possible?</summary>
+      <p>The city’s happiness depends on one child kept alone in misery. Some citizens walk away. The child stays.</p>
+    <figure id="room-art">
+      <!-- EDIT IMAGE: Replace src and describe the new image in alt. Check its credit below. -->
+      <img loading="lazy" decoding="async" src="assets/images/omelas-room.jpg" alt="A bucket and two mops stand in a dark room. A line of light shows beneath the closed door.">
+      <!-- EDIT WORDING: Title, place, and dates appear beside the artwork. -->
+      <figcaption>The hidden room · Modern illustration after Le Guin, 1973</figcaption>
+      <div class="work-note">
+        <!-- EDIT WORDING: This note appears directly below the artwork. -->
+        <p>Look at the distance between this room and the public square. What do you see in the festival now that you know the terms of living there?</p>
+        <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
+        <p>Original AI-generated illustration (OpenAI), made for this exhibition, 2026. Literary source: <a href="https://www.ursulakleguin.com/the-ones-who-walk-away-from-omelas">The Ones Who Walk Away from Omelas</a>.</p>
+      </div>
+    </figure>
+      <a href="#festival-art" id="return-festival">Look at the festival again</a>
+    </details>
+  </section>
+  <!-- GALLERY END: The price of happiness -->
+
+  <!-- GALLERY START: A future after refusal
+       Move this section and its closing comment together. Keep its id for bookmarks. -->
+  <section class="gallery" id="panga" data-stop="Panga" data-era="2021" aria-labelledby="panga-title">
+    <!-- EDIT WORDING: Place, era, and title. Edit data-stop and data-era above for the short timeline label. -->
+    <p class="place">Becky Chambers · 2021</p>
+    <h2 id="panga-title">A future after refusal</h2>
+    <figure id="panga-art">
+      <!-- EDIT IMAGE: Replace src and describe the new image in alt. Check its credit below. -->
+      <img loading="lazy" decoding="async" src="assets/images/panga.jpg" alt="A seated tea monk and a robot face each other across a kettle and cups in a forest clearing.">
+      <!-- EDIT WORDING: Title, place, and dates appear beside the artwork. -->
+      <figcaption>A meeting on Panga · Modern illustration after Chambers, 2021</figcaption>
+      <div class="work-note">
+        <!-- EDIT WORDING: This note appears directly below the artwork. -->
+        <p>Centuries before this meeting, Panga’s robots became self-aware, put down their tools, and left for the wilderness. A tea monk and a robot meet across that separation. Bring the question from Omelas with you: who has the freedom to walk away?</p>
+        <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
+        <p>Original AI-generated illustration (OpenAI), made for this exhibition, 2026. Literary source: <a href="https://us.macmillan.com/books/9781250807748/apsalmforthewildbuilt/">A Psalm for the Wild-Built and publisher’s excerpt</a>.</p>
+      </div>
+    </figure>
+    <p class="question">Who gets to decide whether this world is good?</p>
+  </section>
+  <!-- GALLERY END: A future after refusal -->
+  </main>
+  <footer><a href="#entrance">Return to the entrance</a><a href="#tour">Revisit a gallery</a></footer>
+</body>
+</html>
