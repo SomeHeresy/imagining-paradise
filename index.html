@@ -20,7 +20,7 @@
   <noscript><style>.timeline .route { display: none; }</style></noscript>
 </head>
 <body id="entrance">
-  <a class="skip-link" href="#tour">Skip to the collection</a>
+  <a class="skip-link" href="#story-route">Skip to the stories</a>
   <header class="mast">
     <a href="#entrance" class="wordmark">Imagining Paradise</a>
     <a href="#tour">Collection timeline</a>
@@ -31,9 +31,6 @@
       <!-- EDIT WORDING: The opening title, question, and button. -->
       <h1>Imagining <em>Paradise</em></h1>
       <p class="subtitle">From Heaven to Utopia and Beyond</p>
-      <p class="hero-question">Whose happiness do you see first?</p>
-      <p class="entrance-label">In the middle of this garden, two people reach for each other. Follow their hands. If you could walk into the painting, who would you look for first?</p>
-      <a class="enter" href="#rumpelstiltskin">Enter the spinning room</a>
     </div>
     <figure class="hero-art">
       <!-- EDIT IMAGE: This opening detail has its own file so you may change it independently. -->
@@ -41,8 +38,14 @@
       <!-- EDIT CREDIT: The full object appears in the garden-and-island gallery. -->
       <figcaption><a href="#paradise-art">Giovanni di Paolo · Paradise, detail · 1445</a></figcaption>
     </figure>
+    <div class="intro invitation">
+      <p class="hero-question">Whose happiness do you see first?</p>
+      <p class="entrance-label">Two figures reach across a patch of flowers. Follow one pair of hands before you leave the garden.</p>
+      <a class="enter" href="#rumpelstiltskin">Enter the spinning room</a>
+    </div>
   </div>
-  <nav class="story-index" aria-label="Main story route">
+  <nav id="story-route" class="story-index" aria-label="Main story route">
+    <span class="route-title">Three stories, in order</span>
     <a href="#rumpelstiltskin">Rumpelstiltskin</a><a href="#mongoose">The Brahmin’s Wife and the Mongoose</a><a href="#omelas">Omelas</a>
   </nav>
   <main>
@@ -61,7 +64,7 @@
       </figure>
       <div class="story-label">
         <!-- EDIT WORDING: The visible wall label. -->
-        <p>The king comes back in the morning to count the gold. Anne Anderson takes us into the room the night before. The wheel is still. There is straw on the floor, and the miller’s daughter has turned toward a light at the door. If you were sitting in that chair, what would you give for someone to open it?</p>
+        <p>The wheel is still. The daughter has turned in her chair. A stranger holds a lantern low in the doorway. By morning the king expects every bundle of straw at her feet to be gold. From that chair, what might an open door promise?</p>
         <details class="story-turn"><summary>What does the gold cost her?</summary>
           <p>First her necklace, then her ring. On the third night she has nothing left to offer. The little man asks for her first child if she becomes queen. The king gets his gold each morning without ever having to hear the bargain.</p>
           <p>Later, learning the little man’s name lets the queen keep her child. Look back at the open door. What kind of rescue did it seem to promise the first time?</p>
@@ -86,11 +89,11 @@
     </figure>
     <div class="threshold-label">
       <!-- EDIT WORDING: The wall label stays visible. Only the second view opens. -->
-      <p>A woman comes home carrying water. Her mongoose runs to meet her. In the tale, she sees blood on its mouth. Her baby is somewhere inside the house. Stop at the doorway with her for a moment. What do you think has happened?</p>
+      <p>The mongoose has its head down and its front paws planted apart. In the tale it runs to meet the woman as she returns with her water jar. There is blood on its mouth. She can see the animal from the doorway. She cannot see her baby. What do you think she fears?</p>
       <details class="story-turn"><summary>See the rest of the plate</summary>
         <figure>
           <img loading="lazy" src="assets/images/mongoose-and-cobra.png" alt="The same mongoose faces a coiled cobra on the right-hand side of the plate.">
-          <figcaption>Louis Sargent’s complete natural-history plate. It depicts the two animals together. The household and its child belong to the folktale.</figcaption>
+          <figcaption>Indian grey mongoose and cobra · Louis Sargent, 1909. The plate shows the two animals. The doorway, water jar, and child come from the folktale.</figcaption>
         </figure>
         <p>She brings the heavy water jar down on the mongoose and kills it. Only then does she go inside. Her child is asleep. The snake lies dead beside the cradle. The blood she saw was real. What did she supply from her own fear?</p>
       </details>
@@ -112,7 +115,7 @@
       <figcaption>Festival at Omelas · Modern illustration after Le Guin, 1973</figcaption>
       <div class="work-note">
         <!-- EDIT WORDING: This note appears directly below the artwork. -->
-        <p>If you stepped into this square, who would you follow? Le Guin gives you room to choose the pleasures that would make this city yours. Pick one person in the crowd before you open the door below.</p>
+        <p>Bright banners hang over the dancers. Le Guin invites you to furnish the festival with whatever would make its pleasures convincing to you. If you could step into this crowd, who would you follow?</p>
         <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
         <p>Original AI-generated illustration (OpenAI), made for this exhibition, 2026. Literary source: <a href="https://www.ursulakleguin.com/the-ones-who-walk-away-from-omelas">The Ones Who Walk Away from Omelas</a>.</p>
       </div>
@@ -128,7 +131,7 @@
       <figcaption>The hidden room · Modern illustration after Le Guin, 1973</figcaption>
       <div class="work-note">
         <!-- EDIT WORDING: This note appears directly below the artwork. -->
-        <p>The queen could learn a name and keep her child. The wife could reach the cradle and learn the truth. Here the citizens already know. Some leave, but the child stays behind. Look at the banners again. Who are you thinking about now?</p>
+        <p>A line of daylight slips under the closed door. The citizens know who lives here and what their happiness costs. Look at the banners again. Who are you thinking about now?</p>
         <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
         <p>Original AI-generated illustration (OpenAI), made for this exhibition, 2026. Literary source: <a href="https://www.ursulakleguin.com/the-ones-who-walk-away-from-omelas">The Ones Who Walk Away from Omelas</a>.</p>
       </div>
@@ -151,7 +154,7 @@
       <figcaption>A meeting on Panga · Modern illustration after Chambers, 2021</figcaption>
       <div class="work-note">
         <!-- EDIT WORDING: This note appears directly below the artwork. -->
-        <p>Centuries before this meeting, Panga’s robots became self-aware, put down their tools, and left for the wilderness. A tea monk and a robot meet across that separation. Bring the question from Omelas with you: who has the freedom to walk away?</p>
+        <p>A kettle sits between the monk and the robot. Centuries earlier, Panga’s robots put down their tools and left. After the child’s room in Omelas, what does it mean for these two to be free to sit down together?</p>
         <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
         <p>Original AI-generated illustration (OpenAI), made for this exhibition, 2026. Literary source: <a href="https://us.macmillan.com/books/9781250807748/apsalmforthewildbuilt/">A Psalm for the Wild-Built and publisher’s excerpt</a>.</p>
       </div>
@@ -181,7 +184,7 @@
       <figcaption>Leang Karampuang · South Sulawesi · Color-enhanced research photograph</figcaption>
       <div class="work-note">
         <!-- EDIT WORDING: This note appears directly below the artwork. -->
-        <p>A layer of mineral deposited over the pigment gave researchers a minimum age for the painting. They interpret the arrangement as a scene. The distance between recognizing a figure and knowing what its maker hoped for is where this exhibition begins.</p>
+        <p>A pig takes shape in the red pigment. Mineral laid down over the painting helped researchers establish its minimum age. The tracing shows which other marks they read as figures.</p>
         <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
         <p>Adapted from figure 3 in Oktaviana et al. (2024), cropped for display. <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. <a href="https://www.nature.com/articles/s41586-024-07541-7">Read the dating study and examine its figures</a>.</p>
       </div>
@@ -191,7 +194,7 @@
       <figure>
         <!-- EDIT IMAGE: Keep the tracing and panel at the same scale. -->
         <img loading="lazy" src="assets/images/sulawesi-tracing.jpg" alt="Research drawing outlines the pig and smaller human-like figures visible on the panel.">
-        <figcaption>Leang Karampuang · Published research tracing, 2024</figcaption>
+        <figcaption>Leang Karampuang · Research tracing by Oktaviana et al., 2024 · <a href="https://doi.org/10.1038/s41586-024-07541-7">Figure 3b</a>, cropped · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></figcaption>
       </figure>
     </details>
     <p class="question">We can recognize a story. What its makers imagined as paradise remains unknown.</p>
@@ -211,7 +214,7 @@
       <figcaption>Dilmun · Modern illustration after a Sumerian poem</figcaption>
       <div class="work-note">
         <!-- EDIT WORDING: This note appears directly below the artwork. -->
-        <p>In the opening of Enki and Ninhursanga, a wolf leaves the lambs alone. Yet Dilmun still needs fresh water. When the waters rise, its fields yield grain. One surviving witness to this imagined place is a baked clay tablet from Nippur.</p>
+        <p>A wolf sits under a palm while the sheep graze. In the Sumerian poem, the wolf leaves the lambs in peace. Dilmun still lacks fresh water. Only when the water rises do the fields yield grain.</p>
         <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
         <p>Original AI-generated illustration (OpenAI), made for this exhibition, 2026. Literary source: <a href="https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.1.1.1">Oxford’s translation of Enki and Ninhursanga</a>. <a href="https://collections.penn.museum/collections/object/347491">See the inscribed tablet, Penn Museum CBS4561</a>.</p>
       </div>
@@ -234,7 +237,7 @@
       <figcaption>Fields of Iaru · Egypt, ca. 1300–1224 BCE · Facsimile, 1922</figcaption>
       <div class="work-note">
         <!-- EDIT WORDING: This note appears directly below the artwork. -->
-        <p>Sennedjem and Iineferti still have things to do in the next world. Grain stands high, and they work together. Look at the hands before turning to Hesiod’s imagined past, where food comes freely.</p>
+        <p>Stalks of grain reach up beside Sennedjem and Iineferti. The tomb wall places the couple together in fields where they still sow and harvest after death.</p>
         <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
         <p>Charles K. Wilkinson after the painted tomb wall at Deir el-Medina. <a href="https://www.metmuseum.org/art/collection/search/548354">The Metropolitan Museum of Art</a>, object 30.4.2. Public domain, The Met Open Access (CC0).</p>
       </div>
@@ -246,7 +249,7 @@
       <figcaption>The golden generation · Greece, ca. 700 BCE · Modern illustration</figcaption>
       <div class="work-note">
         <!-- EDIT WORDING: This note appears directly below the artwork. -->
-        <p>In Works and Days, Hesiod looks backward to the time of Cronos. The earth produces food abundantly, relieving the golden generation of exhausting labor. What did you notice first about the people’s hands?</p>
+        <p>Grapes hang within reach of the people resting beneath the branches. Hesiod places his golden generation in a distant past when the earth gave food freely.</p>
         <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
         <p>Original AI-generated illustration (OpenAI), made for this exhibition, 2026. Literary source: <a href="https://lrc.la.utexas.edu/eieol/grkol/70">Hesiod, Works and Days, beginning at line 109</a>.</p>
       </div>
@@ -260,7 +263,7 @@
       <figcaption>Mahavira as a liberated soul · Gujarat, 15th century</figcaption>
       <div class="work-note">
         <!-- EDIT WORDING: This note appears directly below the artwork. -->
-        <p>An early Indian Upanishad connects desire and action to repeated earthly life. Centuries later, this Jain manuscript gives a distinct tradition its own visual form: Mahavira sits as a liberated soul at the summit of the cosmos. The crescent marks the dwelling of liberated beings.</p>
+        <p>A pale crescent sits beneath Mahavira. In this Jain manuscript it marks the dwelling of liberated beings. An earlier Upanishad approaches rebirth through a different tradition, tracing how desire draws a person back to earthly life.</p>
         <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
         <p>Folio from a Kalpasutra manuscript. <a href="https://www.metmuseum.org/art/collection/search/74994">The Metropolitan Museum of Art</a>. Public domain, The Met Open Access (CC0). Early text for comparison: <a href="https://heritage.iitk.ac.in/BRU/4.4.6?script=IAST">Bṛhadāraṇyaka Upaniṣad 4.4.6</a>.</p>
       </div>
@@ -283,7 +286,7 @@
       <figcaption>A promise to one person · Luke 23 · Modern illustration</figcaption>
       <div class="work-note">
         <!-- EDIT WORDING: This note appears directly below the artwork. -->
-        <p>A condemned man asks Jesus to remember him. Jesus promises him companionship in paradise. Luke gives the exchange a voice and a listener, leaving the scenery open to imagination.</p>
+        <p>Two men turn toward one another. In Luke, one asks Jesus to remember him. The promise he receives is that they will be together in paradise.</p>
         <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
         <p>Original AI-generated illustration (OpenAI), made for this exhibition, 2026. Literary source: <a href="https://bible.usccb.org/bible/luke/23">Luke 23:39–43</a>.</p>
       </div>
@@ -295,7 +298,7 @@
       <figcaption>A city for a people · Revelation 21 · Modern illustration</figcaption>
       <div class="work-note">
         <!-- EDIT WORDING: This note appears directly below the artwork. -->
-        <p>In Revelation a city descends from heaven. God dwells among people, and death and mourning end. Move your eye from the intimate exchange in Luke to the many gates of this collective dwelling.</p>
+        <p>A walled city hangs over the landscape. In Revelation it descends from heaven, and God dwells among people. Here the promise reaches everyone who once knew mourning.</p>
         <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
         <p>Original AI-generated illustration (OpenAI), made for this exhibition, 2026. Literary source: <a href="https://bible.usccb.org/bible/revelation/21">Revelation 21:1–4, 12–21</a>.</p>
       </div>
@@ -317,7 +320,7 @@
       <figcaption>Peach Blossom Spring · Zhang Hong, 1638</figcaption>
       <div class="work-note">
         <!-- EDIT WORDING: This note appears directly below the artwork. -->
-        <p>Tao Qian’s fisherman finds people whose families escaped upheaval generations earlier. When he tries to return, the way has vanished. Zhang Hong invites you to make that journey from the right end of the handscroll toward the left.</p>
+        <p>A stream winds between the mountains. Follow it from the right with Tao Qian’s fisherman to a village sheltered from generations of upheaval. When he tries to come back, he cannot find the way.</p>
         <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
         <p>Zhang Hong, ink and color on paper. <a href="https://www.metmuseum.org/art/collection/search/73650">The Metropolitan Museum of Art</a>. Public domain. Detail views use the same work.</p>
       </div>
@@ -340,7 +343,7 @@
       <figcaption>Fragment of a Garden Carpet · Northwestern Iran or Kurdistan, 18th century</figcaption>
       <div class="work-note">
         <!-- EDIT WORDING: This note appears directly below the artwork. -->
-        <p>Qur’an 47:15 describes rivers of water, milk, wine, and honey. Centuries later, this carpet’s makers gave a Persian garden the shape of a textile. Trace a canal between the trees and imagine standing inside the pattern.</p>
+        <p>A canal runs between rows of trees woven into the carpet. The makers laid the garden out as you might see it from above. In Qur’an 47:15, the promised garden has rivers of water, milk, wine, and honey.</p>
         <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
         <p><a href="https://www.metmuseum.org/art/collection/search/448423">The Metropolitan Museum of Art</a>, object from the Theodore M. Davis Collection. Public domain, The Met Open Access (CC0). <a href="https://corpus.quran.com/translation.jsp?chapter=47&verse=15">Read Qur’an 47:15</a>.</p>
       </div>
@@ -363,7 +366,7 @@
       <figcaption>Paradise · Giovanni di Paolo, Siena, 1445</figcaption>
       <div class="work-note">
         <!-- EDIT WORDING: This note appears directly below the artwork. -->
-        <p>This small panel once sat at the base of a larger altarpiece. Faces and outstretched arms lead the eye from one reunion to another. Imagine trying to plot those meetings on the island map beside it.</p>
+        <p>Arms reach across the flower beds. Once set at the foot of a Sienese altarpiece, this small panel brings visitors close enough to see paradise one reunion at a time.</p>
         <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
         <p>Giovanni di Paolo, tempera and gold. <a href="https://www.metmuseum.org/art/collection/search/436512">The Metropolitan Museum of Art</a>, object 06.1046. Public domain, The Met Open Access (CC0).</p>
       </div>
@@ -375,7 +378,7 @@
       <figcaption>The island of Utopia · Louvain, 1516</figcaption>
       <div class="work-note">
         <!-- EDIT WORDING: This note appears directly below the artwork. -->
-        <p>The map and invented alphabet in Thomas More’s first edition lend the island the appearance of a place one might visit. From this distance you can see how a settlement is arranged. How much can you tell about a person living there?</p>
+        <p>Ships sit off the coast of More’s island. The map appeared opposite an invented alphabet in the first edition of Utopia. From this height you can make out the settlements. What can you tell about a person who lives in one?</p>
         <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
         <p>Anonymous woodcut, first edition. Public-domain facsimile via <a href="https://theopenutopia.org/look/">The Open Utopia</a>. <a href="https://library.georgetown.edu/exhibition/500-years-utopia">Georgetown’s first-edition exhibition</a>.</p>
       </div>
@@ -404,7 +407,7 @@
       <figcaption>Ladyland’s kitchen · Modern illustration after Sultana’s Dream, 1905</figcaption>
       <div class="work-note">
         <!-- EDIT WORDING: This note appears directly below the artwork. -->
-        <p>Rokeya Sakhawat Hossain puts scientific knowledge into the hands of women in Ladyland. Sister Sara shows her visitor the pipe carrying concentrated solar heat into the kitchen. Follow its path from the sun to the meal, then revisit the couple harvesting in Egypt.</p>
+        <p>A pipe carries heat from the sun to the cooking pot. In Rokeya Sakhawat Hossain’s Ladyland, Sister Sara shows Sultana how women have put their scientific training to work in a kitchen.</p>
         <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
         <p>Original AI-generated illustration (OpenAI), made for this exhibition, 2026. Literary source: <a href="https://scalar.lehigh.edu/literature-of-colonial-south-asia/rokeya-sakahawat-hossain-sultanas-dream-1905-full-text">Sultana’s Dream, kitchen scene</a>.</p>
       </div>

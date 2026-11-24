@@ -36,7 +36,7 @@ small { font-size: .875rem; }
 .mast a { text-decoration: none; }
 .mast > :first-child { font-family: var(--serif); font-size: 1.4rem; }
 .mast > :last-child:not(:first-child) { color: var(--secondary); font-size: .9rem; }
-.hero { display: grid; grid-template-columns: minmax(16rem,.88fr) minmax(0,1.12fr); align-items: center; gap: clamp(2rem,5vw,6rem); padding: clamp(2rem,4vw,4rem) var(--page-margin); max-width: 120rem; margin: auto; }
+.hero { display: grid; grid-template-columns: minmax(0,2fr) minmax(0,3fr); align-items: center; gap: clamp(2rem,5vw,6rem); padding: clamp(2rem,4vw,4rem) var(--page-margin); max-width: 120rem; margin: auto; }
 .intro { padding-block: 2rem; }
 .hero .intro p { font-size: clamp(1.15rem, 1.8vw, 1.8rem); line-height: 1.4; color: var(--secondary); }
 .intro > * + * { margin-top: 1.4rem; }
@@ -59,7 +59,7 @@ small { font-size: .875rem; }
 .timeline li a:hover::before, .timeline li a:focus-visible::before, .timeline li a[aria-current]::before { background: var(--accent); }
 .timeline li a:hover, .timeline li a:focus-visible { text-decoration: underline; }
 .timeline .nav-era { display: block; font-size: .82rem; color: var(--secondary); }
-.work-note { max-width: 67ch; margin: .8rem 0 1.5rem; }
+.work-note { max-width: 57ch; margin: .8rem 0 1.5rem; }
 .work-note p + p { margin-top: .7rem; color: var(--secondary); }
 .gallery { max-width: 100rem; margin: auto; padding: var(--gallery-space) var(--page-margin) 0; scroll-margin-top: .5rem; }
 .gallery + .gallery { margin-top: var(--gallery-space); border-top: 1px solid var(--rule); }
@@ -78,7 +78,7 @@ figcaption { font-size: .9rem; line-height: 1.5; color: var(--secondary); margin
 .pair .inspect-image img, .comparison-works .inspect-image img { max-height: min(36vw,32rem); }
 .gallery details { max-width: 64rem; margin: 1rem 0 1.5rem; }
 .gallery details summary { width: fit-content; cursor: pointer; text-decoration: underline; text-underline-offset: .3em; padding: .4rem 0; font-size: .95rem; }
-.gallery details[open] > p, .gallery details[open] > ul { max-width: 67ch; margin: .7rem 0; }
+.gallery details[open] > p, .gallery details[open] > ul { max-width: 57ch; margin: .7rem 0; }
 .gallery details figure { margin: 1.25rem 0; }
 .gallery [data-compare], .gallery [data-scroll] { margin-block: 1.5rem; }
 .control { display: inline-flex; justify-content: center; align-items: center; min-height: 2.75rem; padding: .45rem 1rem; border: 1px solid #738075; background: var(--paper); border-radius: 3px; font: 500 .94rem/1.4 var(--sans); }
@@ -151,4 +151,27 @@ footer { display: flex; flex-wrap: wrap; gap: .75rem 2rem; }
   .print-spread, #mongoose { display: block; }
   .story-label, .threshold-label { margin-top: 1.5rem; }
   #mongoose .mongoose-study { max-width: 17rem; }
+}
+
+/* The desktop opening is a facing-page spread. On a phone the plate precedes its question. */
+.hero { column-gap: clamp(2rem,4vw,5rem); row-gap: 1.4rem; }
+.hero > .intro:first-child { align-self: end; padding: 0; }
+.hero-art { grid-column: 2; grid-row: 1 / 3; }
+.hero-art img { width: 100%; height: auto; max-height: none; }
+.hero .invitation { grid-column: 1; align-self: start; padding: 0; }
+.hero .invitation .hero-question { margin-top: 0; }
+.route-title { color: var(--secondary); }
+.hero-art figcaption, .gallery figcaption { max-width: 57ch; }
+#mongoose { grid-template-columns: minmax(0,1.35fr) minmax(0,1fr); }
+#mongoose .mongoose-study { justify-self: start; margin: 0; }
+#mongoose .mongoose-study img { margin-left: 0; }
+#festival-art > .inspect-image { background: transparent; padding: 0; }
+#festival-art > .inspect-image img { width: 100%; max-height: none; }
+#omelas .reveal { margin-top: clamp(5rem,12vh,10rem); }
+@media(max-width:760px) {
+  .hero { row-gap: 1.25rem; }
+  .hero-art, .hero .invitation { grid-column: 1; grid-row: auto; }
+  .hero-art img { width: auto; max-height: 43svh; }
+  .story-index { flex-direction: column; }
+  #mongoose .mongoose-study { max-width: min(52%,17rem); }
 }
