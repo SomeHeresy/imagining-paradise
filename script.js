@@ -15,7 +15,7 @@
   function makeTimeline() {
     const list = document.querySelector(".timeline ol");
     if (!list) return;
-    const galleries = [...document.querySelectorAll("main section.gallery[id]")];
+    const galleries = [...document.querySelectorAll(".historical-collection section.gallery[id]")];
     const links = new Map();
     list.replaceChildren();
     galleries.forEach(gallery => {

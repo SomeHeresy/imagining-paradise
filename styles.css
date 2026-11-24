@@ -127,3 +127,28 @@ dialog .viewer-label { color: var(--secondary); margin-top: .7rem; }
 .inspect-image { grid-template-columns: minmax(0,1fr); }
 .matched-panel .inspect-image { grid-template-rows: minmax(0,1fr); }
 footer { display: flex; flex-wrap: wrap; gap: .75rem 2rem; }
+
+/* Story rooms: a book plate, its facing label, then a narrower threshold. */
+.hero .intro .hero-question { font-family: var(--serif); font-style: italic; color: var(--accent); }
+.hero .intro .entrance-label { max-width: 38ch; font: inherit; color: var(--ink); }
+.story-index { display: flex; flex-wrap: wrap; gap: .65rem 2.2rem; margin: 0 var(--page-margin); padding: 1.35rem 0; border-block: 1px solid var(--rule); }
+.story-index a, .text-source { font-size: .9rem; }
+.story-heading { border-left: 3px solid #a17b31; padding-left: 1.15rem; margin-bottom: 2rem; }
+#mongoose .story-heading { border-color: #885439; }
+.print-spread { display: grid; grid-template-columns: minmax(0,1.12fr) minmax(0,.88fr); align-items: center; gap: clamp(2rem,6vw,6rem); }
+.story-label, .threshold-label { max-width: 52ch; }
+.story-room .inspect-image { background: transparent; padding: 0; }
+.story-room .inspect-image img { max-height: min(70vh,42rem); }
+.story-room .story-turn { margin-block: 1.4rem; padding-block: .6rem; border-block: 1px solid var(--rule); }
+.story-room .story-turn summary { color: var(--ink); }
+.mongoose-study { max-width: 22rem; }
+#mongoose { display: grid; grid-template-columns: minmax(0,.85fr) minmax(0,1.15fr); column-gap: clamp(2rem,6vw,6rem); align-items: start; }
+#mongoose .story-heading { grid-column: 1 / -1; }
+#mongoose .mongoose-study { margin: 0 auto; }
+.threshold-label { align-self: center; }
+#tour { margin-top: var(--gallery-space); }
+@media(max-width:760px) {
+  .print-spread, #mongoose { display: block; }
+  .story-label, .threshold-label { margin-top: 1.5rem; }
+  #mongoose .mongoose-study { max-width: 17rem; }
+}

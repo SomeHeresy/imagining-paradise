@@ -23,7 +23,7 @@
   <a class="skip-link" href="#tour">Skip to the collection</a>
   <header class="mast">
     <a href="#entrance" class="wordmark">Imagining Paradise</a>
-    <a href="#tour">Exhibition timeline</a>
+    <a href="#tour">Collection timeline</a>
   </header>
   <div class="hero">
     <div class="intro">
@@ -31,8 +31,9 @@
       <!-- EDIT WORDING: The opening title, question, and button. -->
       <h1>Imagining <em>Paradise</em></h1>
       <p class="subtitle">From Heaven to Utopia and Beyond</p>
-      <p class="hero-question">What would your perfect world look like?</p>
-      <a class="enter" href="#before-writing">Enter the exhibition</a>
+      <p class="hero-question">Whose happiness do you see first?</p>
+      <p class="entrance-label">In the middle of this garden, two people reach for each other. Follow their hands. If you could walk into the painting, who would you look for first?</p>
+      <a class="enter" href="#rumpelstiltskin">Enter the spinning room</a>
     </div>
     <figure class="hero-art">
       <!-- EDIT IMAGE: This opening detail has its own file so you may change it independently. -->
@@ -41,15 +42,132 @@
       <figcaption><a href="#paradise-art">Giovanni di Paolo · Paradise, detail · 1445</a></figcaption>
     </figure>
   </div>
-  <nav class="timeline" id="tour" aria-label="Exhibition timeline">
-    <h2>Exhibition timeline</h2>
+  <nav class="story-index" aria-label="Main story route">
+    <a href="#rumpelstiltskin">Rumpelstiltskin</a><a href="#mongoose">The Brahmin’s Wife and the Mongoose</a><a href="#omelas">Omelas</a>
+  </nav>
+  <main>
+  <!-- GALLERY START: Rumpelstiltskin -->
+  <section class="gallery story-room" id="rumpelstiltskin" aria-labelledby="rumpel-title">
+    <div class="story-heading">
+      <p class="place">Grimms’ folktale · The spinning room</p>
+      <h2 id="rumpel-title">Rumpelstiltskin</h2>
+    </div>
+    <div class="print-spread">
+      <figure id="miller-art">
+        <!-- EDIT IMAGE: Replace the plate and update its description and credit together. -->
+        <img loading="lazy" src="assets/images/millers-daughter.jpg" alt="The miller’s daughter turns from her spinning wheel toward a small visitor carrying a lantern. Bundles of straw lie at her feet.">
+        <figcaption>Anne Anderson, <cite>The Miller’s Daughter</cite>, 1922.
+          <a href="https://commons.wikimedia.org/wiki/File:The_Miller%27s_Daughter_by_Anne_Anderson.jpg">Public-domain plate</a>.</figcaption>
+      </figure>
+      <div class="story-label">
+        <!-- EDIT WORDING: The visible wall label. -->
+        <p>The king comes back in the morning to count the gold. Anne Anderson takes us into the room the night before. The wheel is still. There is straw on the floor, and the miller’s daughter has turned toward a light at the door. If you were sitting in that chair, what would you give for someone to open it?</p>
+        <details class="story-turn"><summary>What does the gold cost her?</summary>
+          <p>First her necklace, then her ring. On the third night she has nothing left to offer. The little man asks for her first child if she becomes queen. The king gets his gold each morning without ever having to hear the bargain.</p>
+          <p>Later, learning the little man’s name lets the queen keep her child. Look back at the open door. What kind of rescue did it seem to promise the first time?</p>
+        </details>
+        <!-- EDIT CREDIT: The label paraphrases this edition. -->
+        <a class="text-source" href="https://sites.pitt.edu/~dash/grimm055.html">Read the Grimms’ tale</a>
+      </div>
+    </div>
+  </section>
+  <!-- GALLERY END: Rumpelstiltskin -->
+
+  <!-- GALLERY START: The Brahmin’s Wife and the Mongoose -->
+  <section class="gallery story-room" id="mongoose" aria-labelledby="mongoose-title">
+    <div class="story-heading">
+      <p class="place">Panchatantra · The doorway</p>
+      <h2 id="mongoose-title">The Brahmin’s Wife and the Mongoose</h2>
+    </div>
+    <figure class="mongoose-study">
+      <!-- EDIT IMAGE: The first view is the left side of the same plate shown in full below. -->
+      <img loading="lazy" src="assets/images/mongoose-detail.png" alt="A grey mongoose lowers its head. Its forepaws are planted apart.">
+      <figcaption>Indian grey mongoose, detail. Louis Sargent, <cite>Wild Beasts of the World</cite>, 1909.</figcaption>
+    </figure>
+    <div class="threshold-label">
+      <!-- EDIT WORDING: The wall label stays visible. Only the second view opens. -->
+      <p>A woman comes home carrying water. Her mongoose runs to meet her. In the tale, she sees blood on its mouth. Her baby is somewhere inside the house. Stop at the doorway with her for a moment. What do you think has happened?</p>
+      <details class="story-turn"><summary>See the rest of the plate</summary>
+        <figure>
+          <img loading="lazy" src="assets/images/mongoose-and-cobra.png" alt="The same mongoose faces a coiled cobra on the right-hand side of the plate.">
+          <figcaption>Louis Sargent’s complete natural-history plate. It depicts the two animals together. The household and its child belong to the folktale.</figcaption>
+        </figure>
+        <p>She brings the heavy water jar down on the mongoose and kills it. Only then does she go inside. Her child is asleep. The snake lies dead beside the cradle. The blood she saw was real. What did she supply from her own fear?</p>
+      </details>
+      <!-- EDIT CREDIT: Both views come from one public-domain plate. -->
+      <p class="text-source"><a href="https://commons.wikimedia.org/wiki/File:Indiangreymongoosesargeant.png">Public-domain plate and crop source</a> · <a href="https://sites.pitt.edu/~dash/panchatantra.html">Read the Panchatantra tale</a></p>
+    </div>
+  </section>
+  <!-- GALLERY END: The Brahmin’s Wife and the Mongoose -->
+  <!-- GALLERY START: The price of happiness
+       Move this section and its closing comment together. Keep its id for bookmarks. -->
+  <section class="gallery" id="omelas" data-stop="Omelas" data-era="1973" aria-labelledby="omelas-title">
+    <!-- EDIT WORDING: Place, era, and title. Edit data-stop and data-era above for the short timeline label. -->
+    <p class="place">Ursula K. Le Guin · 1973</p>
+    <h2 id="omelas-title">The price of happiness</h2>
+    <figure id="festival-art">
+      <!-- EDIT IMAGE: Replace src and describe the new image in alt. Check its credit below. -->
+      <img loading="lazy" decoding="async" src="assets/images/omelas-festival.jpg" alt="A summer festival fills an open square with people and bright banners.">
+      <!-- EDIT WORDING: Title, place, and dates appear beside the artwork. -->
+      <figcaption>Festival at Omelas · Modern illustration after Le Guin, 1973</figcaption>
+      <div class="work-note">
+        <!-- EDIT WORDING: This note appears directly below the artwork. -->
+        <p>If you stepped into this square, who would you follow? Le Guin gives you room to choose the pleasures that would make this city yours. Pick one person in the crowd before you open the door below.</p>
+        <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
+        <p>Original AI-generated illustration (OpenAI), made for this exhibition, 2026. Literary source: <a href="https://www.ursulakleguin.com/the-ones-who-walk-away-from-omelas">The Ones Who Walk Away from Omelas</a>.</p>
+      </div>
+    </figure>
+    <!-- OPTIONAL DETAIL: Keep the condition closed on entry so visitors see the festival first. -->
+    <details class="reveal" id="condition">
+      <summary>What makes this happiness possible?</summary>
+      <p>The city’s happiness depends on one child kept alone in misery. Some citizens walk away. The child stays.</p>
+    <figure id="room-art">
+      <!-- EDIT IMAGE: Replace src and describe the new image in alt. Check its credit below. -->
+      <img loading="lazy" decoding="async" src="assets/images/omelas-room.jpg" alt="A bucket and two mops stand in a dark room. A line of light shows beneath the closed door.">
+      <!-- EDIT WORDING: Title, place, and dates appear beside the artwork. -->
+      <figcaption>The hidden room · Modern illustration after Le Guin, 1973</figcaption>
+      <div class="work-note">
+        <!-- EDIT WORDING: This note appears directly below the artwork. -->
+        <p>The queen could learn a name and keep her child. The wife could reach the cradle and learn the truth. Here the citizens already know. Some leave, but the child stays behind. Look at the banners again. Who are you thinking about now?</p>
+        <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
+        <p>Original AI-generated illustration (OpenAI), made for this exhibition, 2026. Literary source: <a href="https://www.ursulakleguin.com/the-ones-who-walk-away-from-omelas">The Ones Who Walk Away from Omelas</a>.</p>
+      </div>
+    </figure>
+      <a href="#festival-art" id="return-festival">Look at the festival again</a>
+    </details>
+  </section>
+  <!-- GALLERY END: The price of happiness -->
+
+  <!-- GALLERY START: A future after refusal
+       Move this section and its closing comment together. Keep its id for bookmarks. -->
+  <section class="gallery" id="panga" data-stop="Panga" data-era="2021" aria-labelledby="panga-title">
+    <!-- EDIT WORDING: Place, era, and title. Edit data-stop and data-era above for the short timeline label. -->
+    <p class="place">Epilogue · Becky Chambers · 2021</p>
+    <h2 id="panga-title">A future after refusal</h2>
+    <figure id="panga-art">
+      <!-- EDIT IMAGE: Replace src and describe the new image in alt. Check its credit below. -->
+      <img loading="lazy" decoding="async" src="assets/images/panga.jpg" alt="A seated tea monk and a robot face each other across a kettle and cups in a forest clearing.">
+      <!-- EDIT WORDING: Title, place, and dates appear beside the artwork. -->
+      <figcaption>A meeting on Panga · Modern illustration after Chambers, 2021</figcaption>
+      <div class="work-note">
+        <!-- EDIT WORDING: This note appears directly below the artwork. -->
+        <p>Centuries before this meeting, Panga’s robots became self-aware, put down their tools, and left for the wilderness. A tea monk and a robot meet across that separation. Bring the question from Omelas with you: who has the freedom to walk away?</p>
+        <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
+        <p>Original AI-generated illustration (OpenAI), made for this exhibition, 2026. Literary source: <a href="https://us.macmillan.com/books/9781250807748/apsalmforthewildbuilt/">A Psalm for the Wild-Built and publisher’s excerpt</a>.</p>
+      </div>
+    </figure>
+    <p class="question">Who gets to decide whether this world is good?</p>
+  </section>
+  <!-- GALLERY END: A future after refusal -->
+  <nav class="timeline" id="tour" aria-label="Other visions of paradise">
+    <h2>Other visions of paradise</h2>
     <div class="route">
       <svg aria-hidden="true" focusable="false"><path></path></svg>
       <ol></ol>
     </div>
-    <noscript><a href="#before-writing">Begin the tour</a></noscript>
+    <noscript><a href="#before-writing">Visit the collection</a></noscript>
   </nav>
-  <main>
+  <div class="historical-collection">
   <!-- GALLERY START: Before writing
        Move this section and its closing comment together. Keep its id for bookmarks. -->
   <section class="gallery" id="before-writing" data-stop="Sulawesi cave art" data-era="≥51,200 years ago" aria-labelledby="before-writing-title">
@@ -298,66 +416,7 @@
   </section>
   <!-- GALLERY END: A kitchen powered by sunlight -->
 
-  <!-- GALLERY START: The price of happiness
-       Move this section and its closing comment together. Keep its id for bookmarks. -->
-  <section class="gallery" id="omelas" data-stop="Omelas" data-era="1973" aria-labelledby="omelas-title">
-    <!-- EDIT WORDING: Place, era, and title. Edit data-stop and data-era above for the short timeline label. -->
-    <p class="place">Ursula K. Le Guin · 1973</p>
-    <h2 id="omelas-title">The price of happiness</h2>
-    <figure id="festival-art">
-      <!-- EDIT IMAGE: Replace src and describe the new image in alt. Check its credit below. -->
-      <img loading="lazy" decoding="async" src="assets/images/omelas-festival.jpg" alt="A summer festival fills an open square with people and bright banners.">
-      <!-- EDIT WORDING: Title, place, and dates appear beside the artwork. -->
-      <figcaption>Festival at Omelas · Modern illustration after Le Guin, 1973</figcaption>
-      <div class="work-note">
-        <!-- EDIT WORDING: This note appears directly below the artwork. -->
-        <p>Le Guin lets readers furnish the city with pleasures that make it convincing to them. Take a moment to decide what makes this celebration inviting, then open the next part of the story.</p>
-        <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
-        <p>Original AI-generated illustration (OpenAI), made for this exhibition, 2026. Literary source: <a href="https://www.ursulakleguin.com/the-ones-who-walk-away-from-omelas">The Ones Who Walk Away from Omelas</a>.</p>
-      </div>
-    </figure>
-    <!-- OPTIONAL DETAIL: Keep the condition closed on entry so visitors see the festival first. -->
-    <details class="reveal" id="condition">
-      <summary>What makes this happiness possible?</summary>
-      <p>The city’s happiness depends on one child kept alone in misery. Some citizens walk away. The child stays.</p>
-    <figure id="room-art">
-      <!-- EDIT IMAGE: Replace src and describe the new image in alt. Check its credit below. -->
-      <img loading="lazy" decoding="async" src="assets/images/omelas-room.jpg" alt="A bucket and two mops stand in a dark room. A line of light shows beneath the closed door.">
-      <!-- EDIT WORDING: Title, place, and dates appear beside the artwork. -->
-      <figcaption>The hidden room · Modern illustration after Le Guin, 1973</figcaption>
-      <div class="work-note">
-        <!-- EDIT WORDING: This note appears directly below the artwork. -->
-        <p>Look at the distance between this room and the public square. What do you see in the festival now that you know the terms of living there?</p>
-        <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
-        <p>Original AI-generated illustration (OpenAI), made for this exhibition, 2026. Literary source: <a href="https://www.ursulakleguin.com/the-ones-who-walk-away-from-omelas">The Ones Who Walk Away from Omelas</a>.</p>
-      </div>
-    </figure>
-      <a href="#festival-art" id="return-festival">Look at the festival again</a>
-    </details>
-  </section>
-  <!-- GALLERY END: The price of happiness -->
-
-  <!-- GALLERY START: A future after refusal
-       Move this section and its closing comment together. Keep its id for bookmarks. -->
-  <section class="gallery" id="panga" data-stop="Panga" data-era="2021" aria-labelledby="panga-title">
-    <!-- EDIT WORDING: Place, era, and title. Edit data-stop and data-era above for the short timeline label. -->
-    <p class="place">Becky Chambers · 2021</p>
-    <h2 id="panga-title">A future after refusal</h2>
-    <figure id="panga-art">
-      <!-- EDIT IMAGE: Replace src and describe the new image in alt. Check its credit below. -->
-      <img loading="lazy" decoding="async" src="assets/images/panga.jpg" alt="A seated tea monk and a robot face each other across a kettle and cups in a forest clearing.">
-      <!-- EDIT WORDING: Title, place, and dates appear beside the artwork. -->
-      <figcaption>A meeting on Panga · Modern illustration after Chambers, 2021</figcaption>
-      <div class="work-note">
-        <!-- EDIT WORDING: This note appears directly below the artwork. -->
-        <p>Centuries before this meeting, Panga’s robots became self-aware, put down their tools, and left for the wilderness. A tea monk and a robot meet across that separation. Bring the question from Omelas with you: who has the freedom to walk away?</p>
-        <!-- EDIT CREDIT: Keep creator, image terms, and the primary source together. -->
-        <p>Original AI-generated illustration (OpenAI), made for this exhibition, 2026. Literary source: <a href="https://us.macmillan.com/books/9781250807748/apsalmforthewildbuilt/">A Psalm for the Wild-Built and publisher’s excerpt</a>.</p>
-      </div>
-    </figure>
-    <p class="question">Who gets to decide whether this world is good?</p>
-  </section>
-  <!-- GALLERY END: A future after refusal -->
+  </div>
   </main>
   <footer><a href="#entrance">Return to the entrance</a><a href="#tour">Revisit a gallery</a></footer>
 </body>
